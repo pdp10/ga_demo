@@ -1,0 +1,10 @@
+
+[Anjuta]
+Maximized=1
+Geometry=1152x789+0+27
+
+[File Loader]
+Files=file:///home/Piero Dalle Pezze/Projects/geneticalgorithm/src/StringPopulation.cpp#146%%%file:///home/Piero Dalle Pezze/Projects/geneticalgorithm/src/StringPopulation.h#26%%%file:///home/Piero Dalle Pezze/Projects/geneticalgorithm/src/main.cc#123
+
+[Execution]
+Run in terminal=2

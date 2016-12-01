@@ -1,0 +1,104 @@
+
+Copyright (C) Piero Dalle Pezze 2007 <->
+
+geneticalgorithm is free software.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Library General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor Boston, MA 02110-1301,  USA
+
+
+
+
+ABSTRACT
+--------
+geneticalgorithm is a software that shows a genetic algorithm works. It solves
+the simple problem to find a given string (target) in a space of random strings 
+of the same length as the target one. The alphabet consists of 90 chars.
+
+
+
+LICENSE
+-------
+geneticalgorithm is provided under the GPL v2 license. You can read a copy in the file LICENSE. The implementation of the Mersenne Twister algorithm is under BSD license. You can read a copy in the file mt19937ar.c, located inside the folder src/.
+
+
+
+INSTALLATION
+------------
+To install geneticalgorithm, you have to enter in the folder geneticalgorithm/
+	
+cd geneticalgorithm
+
+and run:
+
+./configure
+make 
+make install   # with root's privileges
+
+
+Instead, if you only want to run geneticalgorithm without installing it, 
+you follow the above procedure without running make install.
+
+
+
+EXECUTION
+---------
+If you don't have installed it, you must enter in the folder geneticalgorithm/src/ .
+
+To execute, see geneticalgorithm --help.
+
+
+
+CONFIGURATION FILE
+------------------
+geneticalgorithm needs two files to run. The first one contains values to configure the genetic algorithm and other choices. The user can choose the algorithms to make the selection and crossover, to extract elements, to compute the fitness. The second one will contain results.
+A complete configuration file is made of:
+
+
+# The fitness threshold [0..n)
+fitness_threshold	  0
+
+# The size of the population (0..n)
+population_size		  2000
+
+# The threshold of the number of iterations (0..n)
+iterations_threshold	  20000
+
+# The rate of mutation [0.0 .. 1.0)
+mutation_rate		  0.25f
+
+# The rate of crossover [0.0 .. 1.0)
+crossover_rate		  0.80f
+
+# The selection algorithm to use. You can choose one of them.
+selection_choice	  ELITISM | ROULETTE_WHEEL_SELECTION | TOURNAMENT_SELECTION | RANK_SELECTION
+
+# The crossover algorithm to use. You can choose one of them.
+crossover_choice	  SINGLE_POINT_CROSSOVER | TWO_POINT_CROSSOVER | UNIFORM_CROSSOVER
+
+# The random generator algorithm to use. You can choose one of them.
+generator_choice	  RAN0 | MT19937AR
+
+# The probabilistic variable to use. You can choose one of them.
+probabilistic_choice	  UNIFORM | BY_FITNESS
+
+# The fitness function to use. You can choose one of them.
+fitness_choice		  LINEAR | SQUARE
+
+# The target to find.
+target			  Hello world (genetic algorithm)!
+
+
+where lines that begin with '#' are comments.
+Some examples of configuration files are located in the folder examples/ .
