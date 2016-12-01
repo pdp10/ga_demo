@@ -1,6 +1,6 @@
 /*
  * Functions.h
- * Copyright (C) Piero Dalle Pezze 2007 <piero.dallepezze@gmail.com>
+ * Copyright (C) Piero Dalle Pezze 2007 <->
  * 
  * geneticalgorithm is free software.
  *
