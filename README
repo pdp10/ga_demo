@@ -36,27 +36,16 @@ geneticalgorithm is provided under the GPL v2 license. You can read a copy in th
 
 INSTALLATION
 ------------
-To install geneticalgorithm, you have to enter in the folder geneticalgorithm/
-	
-cd geneticalgorithm
+To install geneticalgorithm, you need to run:
 
-and run:
-
-./configure
 make 
-make install   # with root's privileges
-
-
-Instead, if you only want to run geneticalgorithm without installing it, 
-you follow the above procedure without running make install.
 
 
 
 EXECUTION
 ---------
-If you don't have installed it, you must enter in the folder geneticalgorithm/src/ .
 
-To execute, see geneticalgorithm --help.
+To execute, see ./geneticalgorithm --help.
 
 
 

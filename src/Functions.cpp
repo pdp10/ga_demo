@@ -23,6 +23,7 @@
 
 
 #include "Functions.h"
+#include <cstdlib>
 
 
 void getRunTime(const timeb& _t1, const timeb& _t2, int& _s, int& _ms) { 

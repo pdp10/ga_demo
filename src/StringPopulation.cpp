@@ -22,6 +22,7 @@
   
 #include "StringPopulation.h"
 #include <deque>
+#include <cstdlib>
 
 
 

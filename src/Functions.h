@@ -36,9 +36,15 @@
 #include "Population.h"
 #include "StringPopulation.h"
 #include "Citizen.h"
+
+#ifdef __cplusplus
 extern "C" {
-#include "mt19937ar.h"
+#endif
+    #include "mt19937ar.h"
+#ifdef __cplusplus   
 }
+#endif
+
 using namespace std;
 
 

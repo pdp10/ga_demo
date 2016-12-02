@@ -1,5 +1,4 @@
 /*
- * main.cc
  * Copyright (C) Piero Dalle Pezze 2007 <->
  * 
  * geneticalgorithm is free software.
@@ -20,7 +19,7 @@
  */
 
 
-
+#include <stdlib.h>
 #include <iostream>
 #include <fstream>
 #include <string>
