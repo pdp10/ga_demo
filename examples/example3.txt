@@ -14,10 +14,10 @@ mutation_rate		  0.25f
 crossover_rate		  0.80f
 
 # The selection algorithm to use. You can choose one of them.
-selection_choice	  ELITISM
+selection_choice	  RANK_SELECTION
 
 # The crossover algorithm to use. You can choose one of them.
-crossover_choice	  UNIFORM_CROSSOVER
+crossover_choice	  SINGLE_POINT_CROSSOVER
 
 # The random generator algorithm to use. You can choose one of them.
 generator_choice	  MT19937AR
@@ -26,7 +26,7 @@ generator_choice	  MT19937AR
 probabilistic_choice	  BY_FITNESS
 
 # The fitness function to use. You can choose one of them.
-fitness_choice		  SQUARE
+fitness_choice		  LINEAR
 
 # The target to find.
 target			  Hello world (genetic algorithm)!

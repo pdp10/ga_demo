@@ -22,7 +22,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor Boston, MA 02110-1301,  USA
 
 ABSTRACT
 --------
-geneticalgorithm is a software that shows a genetic algorithm works. It solves
+This package shows how a genetic algorithm works. It solves
 the simple problem to find a given string (target) in a space of random strings 
 of the same length as the target one. The alphabet consists of 90 chars.
 
@@ -44,7 +44,6 @@ make
 
 EXECUTION
 ---------
-
 To execute, see ./geneticalgorithm --help.
 
 

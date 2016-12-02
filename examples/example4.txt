@@ -17,7 +17,7 @@ crossover_rate		  0.80f
 selection_choice	  ELITISM
 
 # The crossover algorithm to use. You can choose one of them.
-crossover_choice	  UNIFORM_CROSSOVER
+crossover_choice	  SINGLE_POINT_CROSSOVER
 
 # The random generator algorithm to use. You can choose one of them.
 generator_choice	  MT19937AR
