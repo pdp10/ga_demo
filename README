@@ -1,29 +1,14 @@
 
-Copyright (C) Piero Dalle Pezze 2007 <->
-
-geneticalgorithm is free software.
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Library General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor Boston, MA 02110-1301,  USA
-
+Author: Piero Dalle Pezze
+Year: 2007
+Course: Intelligent Systems, Dept. of Pure and Applied Mathematics, University of Padova, Italy
 
 
 
 ABSTRACT
 --------
 This package shows how a genetic algorithm works. It solves
-the simple problem to find a given string (target) in a space of random strings 
+the simple problem of finding a given string (target) in a space of random strings 
 of the same length as the target one. The alphabet consists of 90 chars.
 
 
