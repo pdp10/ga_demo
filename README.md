@@ -1,44 +1,43 @@
 
+# GA demo
+
 Author: Piero Dalle Pezze
+
 Year: 2007
+
 Course: Intelligent Systems, Dept. of Pure and Applied Mathematics, University of Padova, Italy
 
+[![GPLv2 License](http://img.shields.io/badge/license-GPLv2-blue.svg)](https://www.gnu.org/licenses/gpl.html)
 
 
-ABSTRACT
---------
+## ABSTRACT
 This package shows how a genetic algorithm works. It solves
 the simple problem of finding a given string (target) in a space of random strings 
 of the same length as the target one. The alphabet consists of 90 chars.
 
+## LICENSE
+geneticalgorithm is provided under the GPL v2 license. You can read a copy in the file LICENSE. 
+The implementation of the Mersenne Twister algorithm is under BSD license. 
+You can read a copy in the file mt19937ar.c, located inside the folder src/.
 
-
-LICENSE
--------
-geneticalgorithm is provided under the GPL v2 license. You can read a copy in the file LICENSE. The implementation of the Mersenne Twister algorithm is under BSD license. You can read a copy in the file mt19937ar.c, located inside the folder src/.
-
-
-
-INSTALLATION
-------------
+## INSTALLATION
 To install geneticalgorithm, you need to run:
-
+```
 make 
+```
 
+## EXECUTION
+To execute, see 
+```
+./geneticalgorithm --help.
+```
 
-
-EXECUTION
----------
-To execute, see ./geneticalgorithm --help.
-
-
-
-CONFIGURATION FILE
-------------------
-geneticalgorithm needs two files to run. The first one contains values to configure the genetic algorithm and other choices. The user can choose the algorithms to make the selection and crossover, to extract elements, to compute the fitness. The second one will contain results.
-A complete configuration file is made of:
-
-
+## CONFIGURATION FILE
+geneticalgorithm needs two files to run. The first one contains values to configure 
+the genetic algorithm and other choices. The user can choose the algorithms to make 
+the selection and crossover, to extract elements, to compute the fitness. The second 
+one will contain results. A complete configuration file is made of:
+```
 # The fitness threshold [0..n)
 fitness_threshold	  0
 
@@ -71,7 +70,6 @@ fitness_choice		  LINEAR | SQUARE
 
 # The target to find.
 target			  Hello world (genetic algorithm)!
-
-
+```
 where lines that begin with '#' are comments.
 Some examples of configuration files are located in the folder examples/ .
